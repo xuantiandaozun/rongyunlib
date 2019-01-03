@@ -1,0 +1,1 @@
+include ':app', ':rongyunlib', ':IMLib', ':IMKit', ':Sight', ':RedPacket', ':RCSticker', ':MCenter', ':CallLib', ':CallKit'
