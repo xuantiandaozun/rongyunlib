@@ -42,6 +42,10 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation project(':IMKit')
     implementation project(':IMLib')
+    //项目基类依赖
+    implementation 'com.github.xuantiandaozun:baseappproject:0.0.1_5'
+    //项目UI依赖
+    implementation 'com.github.xuantiandaozun:UIModule:0.0.1-test5'
 }
 
 
