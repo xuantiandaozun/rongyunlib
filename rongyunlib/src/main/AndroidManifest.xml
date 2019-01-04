@@ -2,9 +2,6 @@
     package="com.system.rongyunlib" >
 
         <application>
-            <meta-data
-                android:name="APPID"
-                android:value="${APPID}" />
             <activity
                 android:name=".ui.ConversationListActivity"
                 android:screenOrientation="portrait"
@@ -16,7 +13,7 @@
                     <category android:name="android.intent.category.DEFAULT" />
 
                     <data
-                        android:host="${APPID}"
+                        android:host="${RY_APPID}"
                         android:pathPrefix="/conversationlist"
                         android:scheme="rong" />
                 </intent-filter>
@@ -33,7 +30,7 @@
                     <category android:name="android.intent.category.DEFAULT" />
 
                     <data
-                        android:host="${APPID}"
+                        android:host="${RY_APPID}"
                         android:pathPrefix="/subconversationlist"
                         android:scheme="rong" />
                 </intent-filter>
@@ -49,7 +46,7 @@
                     <category android:name="android.intent.category.DEFAULT" />
 
                     <data
-                        android:host="${APPID}"
+                        android:host="${RY_APPID}"
                         android:pathPrefix="/conversation/"
                         android:scheme="rong" />
                 </intent-filter>
