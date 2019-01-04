@@ -29,10 +29,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    //implementation 'com.github.xuantiandaozun.rongyunlib:rongyunlib:0.0.2-test6'
-    implementation project(':rongyunlib')
+    implementation 'com.github.xuantiandaozun.rongyunlib:rongyunlib:0.0.2-test7'
+    //implementation project(':rongyunlib')
     //项目基类依赖
-    implementation 'com.github.xuantiandaozun:baseappproject:0.0.1_5'
+    //implementation 'com.github.xuantiandaozun:baseappproject:0.0.1_5'
   //  implementation project(':IMKit')
-    implementation project(':IMLib')
+   // implementation project(':IMLib')
 }
