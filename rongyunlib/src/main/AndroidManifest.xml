@@ -2,9 +2,6 @@
     package="com.system.rongyunlib" >
 
         <application>
-            <meta-data
-                android:name="RONG_CLOUD_APP_KEY"
-                android:value="${RY_KEY}" />
             <activity
                 android:name=".ui.ConversationListActivity"
                 android:screenOrientation="portrait"
