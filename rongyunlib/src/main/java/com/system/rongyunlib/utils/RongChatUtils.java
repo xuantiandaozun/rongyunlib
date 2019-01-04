@@ -1,6 +1,7 @@
 package com.system.rongyunlib.utils;
 
 import android.app.ActivityManager;
+import android.app.Application;
 import android.content.Context;
 import android.net.Uri;
 
@@ -23,8 +24,8 @@ public class RongChatUtils {
      * @param context Application类的Context
      */
     public static void init(Context context) {
-        if (((BaseMainApp)context).getApplicationInfo().packageName.equals(getCurProcessName(((BaseMainApp)context))) ||
-                "io.rong.push".equals(getCurProcessName(((BaseMainApp)context)))) {
+        if (((Application)context).getApplicationInfo().packageName.equals(getCurProcessName(((Application)context))) ||
+                "io.rong.push".equals(getCurProcessName(((Application)context)))) {
             RongIM.init(context);
 
         }
