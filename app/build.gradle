@@ -9,6 +9,11 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [
+                APP_KEY: "frame",
+                RY_KEY : "8w7jv4qb82try",
+                RY_APPID  : "com.system.rongyunlibrary"
+        ]
     }
     buildTypes {
         release {
@@ -25,5 +30,5 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    implementation 'com.github.xuantiandaozun.rongyunlib:rongyunlib:0.0.1'
+    implementation 'com.github.xuantiandaozun.rongyunlib:rongyunlib:0.0.2-test5'
 }

@@ -9,6 +9,7 @@ import com.system.baseapplibrary.BaseMainApp;
 
 import io.rong.imkit.RongIM;
 import io.rong.imkit.model.GroupUserInfo;
+import io.rong.imlib.RongIMClient;
 import io.rong.imlib.model.Group;
 import io.rong.imlib.model.UserInfo;
 
@@ -27,8 +28,10 @@ public class RongChatUtils {
         if (((Application)context).getApplicationInfo().packageName.equals(getCurProcessName(((Application)context))) ||
                 "io.rong.push".equals(getCurProcessName(((Application)context)))) {
             RongIM.init(context);
-
         }
+    }
+    public static void connect(String token, RongIMClient.ConnectCallback callback){
+        RongIM.connect(token,callback);
     }
 
     /**
