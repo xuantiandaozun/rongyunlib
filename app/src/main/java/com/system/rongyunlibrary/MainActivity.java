@@ -8,7 +8,6 @@ import com.google.gson.Gson;
 import com.system.baseapplibrary.utils.ToastUtil;
 import com.system.rongyunlib.utils.RongChatUtils;
 
-import io.rong.imkit.RongIM;
 import io.rong.imlib.RongIMClient;
 import io.rong.imlib.model.UserInfo;
 
@@ -19,9 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         RongTokenBean rongTokenBean = new Gson().fromJson(FramneConstants.rongToken, RongTokenBean.class);
-
-
-        RongIM.connect(rongTokenBean.getToken(),new RongIMClient.ConnectCallback() {
+        RongChatUtils.connect(rongTokenBean.getToken(), new RongIMClient.ConnectCallback() {
             @Override
             public void onTokenIncorrect() {
                 System.out.println();

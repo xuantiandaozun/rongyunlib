@@ -24,9 +24,9 @@ public class RongChatUtils {
      *
      * @param context Application类的Context
      */
-    public static void init(Context context) {
-        if (((Application)context).getApplicationInfo().packageName.equals(getCurProcessName(((Application)context))) ||
-                "io.rong.push".equals(getCurProcessName(((Application)context)))) {
+    public static void init(Application context) {
+        if (context.getApplicationInfo().packageName.equals(getCurProcessName(context.getApplicationContext())) ||
+                "io.rong.push".equals(getCurProcessName(context.getApplicationContext()))) {
             RongIM.init(context);
         }
     }
